@@ -176,7 +176,9 @@ def save_changes():
         b = False
         string = (f'不支持用“{encoding_combobox.get()}”编码解码文件“{vname_file.get()}”失败！\n'
                    "可能是编码拼写错误，请检查编码拼写\n"
-                   "您可以使用\n")
+                   "win10、win7操作系统的用户可以用记事本打开姓名文件，点击菜单栏上的“文件(F)”、\
+点击“另存为(A)”，编码选择“ANSI”后点“保存(S)”\n，确认替换“是(Y)”，回到随机点名，在设置里的\
+姓名文件编码选择“自动”或“ANSI”就可以了（^_^）")
         info += string
         errorinfo += string + "报错：\n" + format_exc() +"\n"
     except:
